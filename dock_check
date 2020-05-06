@@ -1,0 +1,4 @@
+# check if the web container is already running, if not, then start
+
+if docker ps | grep prod_dock; then echo "running"; else echo "not running"; fi
+
