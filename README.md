@@ -19,6 +19,10 @@ The purpose of this project is automate the deployment of HTML pages in a remote
 
 * **Task 3** - The name of this job is docker_prod_deploy, and its task is to copy the newly made changes to the master branch into /home/ec2-user/prod_web location on the remote machine, which has been volume mapped to /usr/local/apache2/htdocs of the prod_dock container
   * The production URL is http://ec2-18-221-114-170.us-east-2.compute.amazonaws.com:8080
+  
+* **<h5>Improvements**
+ * Add feature to send mail to QA when the dev deployment is complete
+ * Figure out how run a bash script remotely with ssh
 
 The whole setup can be done on a local machine too, but my laptop is a little ancient, and could not handle both running the VM and jenkins and kept crashing, so I moved the containers and webservers to AWS
 
